@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_item"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FindOwner">
+
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="63dp"
+        android:gravity="center"
+        android:text="Add" />
+
+    <EditText
+        android:id="@+id/ownerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/phoneNumber"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="137dp"
+        android:layout_marginBottom="27dp"
+        android:textColorHint="@color/black"
+        android:ems="10"
+        android:hint="Enter Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/phoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/addButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="133dp"
+        android:layout_marginBottom="29dp"
+        android:ems="10"
+        android:textColorHint="@color/black"
+        android:hint="Enter Phone Number"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/carNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ownerName"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="141dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:hint="Enter Vehicle Number"
+        android:inputType="text"
+        android:textColorHint="@color/black" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="6dp"
+        android:text="Search Owner" />
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.homie">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/chat"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/chat"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HOMIE">
+        <activity
+            android:name=".add_Vehical"
+            android:exported="true" />
+        <activity
+            android:name=".FindOwner"
+            android:exported="true" />
+        <activity android:name=".GroupChatActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
